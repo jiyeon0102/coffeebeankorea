@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커피빈</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Open+Sans&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;1,100&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header_up_slide">
+            <div id="header_up_slide_text"><h3><span>로그인</span>을 하시면 커피빈 멤버스 클럽의 <span>다양한혜택</span>을 받으실 수 있습니다.</h3></div>
+            <div id="header_up_slide_bt">
+                <button id="h_bt_1">로그인</button>
+                <button id="h_bt_2">회원가입</button>
+            </div>
+        </div>
+        <div id="header1">
+            <div id="header1_box">
+                <ul>
+                    <li>로그인</li>
+                    <li>매장찾기</li>
+                    <li>채용정보</li>
+                    <li>단체 및 기업구매</li>
+                    <li>고객서비스</li>
+                    <li><img src="icons/ico_user_info_line.png" alt="" id="header_popup_bt"></li>
+                   
+                </ul>
+            </div>
+        </div>
+        <div id="header2">
+            <div id="search_box">
+                <input type="text" placeholder="검색어를 입력하세요">
+            </div>
+            <div id="header2_box">
+                <div id="logo"></div>
+                <ul id="menu">
+                    <li><h3>BUY ONLINE</h3>
+                        <div class="submenu1">
+                            <div class="submenu1-1">
+                                <ul>
+                                    <li><h3>View All</h3></li>
+                                </ul>
+                            </div>
+                            <div class="submenu1-1">
+                                <ul>
+                                    <li><h3>♥ 6월 신규 MD 오픈</h3></li>
+                                    <li><h4>- ♥ 06/30일 10 : 00 OPEN</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu1-1">
+                                <ul>
+                                    <li><h3>분쇄형 커피</h3></li>
+                                    <li><h4>- 드립백</h4></li>
+                                    <li><h4>- 소풍커피</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu1-1">
+                                <ul>
+                                    <li><h3>파우치 커피</h3></li>
+                                    <li><h4>- ♥NEW♥파우치 커피</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu1-1">
+                                <ul>
+                                    <li><h3>캡슐 커피</h3></li>
+                                    <li><h4>- ♥NEW♥네스프레소 호환용</h4></li>
+                                    <li><h4>- CBTL 호환용</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu1-2">
+                                <ul>
+                                    <li><h3>원두</h3></li>
+                                    <li><h4><span>- 원두 가이드</span></h4></li>
+                                    <li><h4>- MD's Pick</h4></li>
+                                    <li><h4>- 라이트 로스트</h4></li>
+                                    <li><h4>- 미디엄 로스트</h4></li>
+                                    <li><h4>- 다크 로스트</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu1-2">
+                                <ul>
+                                    <li><h3>티</h3></li>
+                                    <li><h4><span>- 티 가이드</span></h4></li>
+                                    <li><h4>- 클래식티</h4></li>
+                                    <li><h4>- 허브티</h4></li>
+                                    <li><h4>- 프룻티</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu1-2">
+                                <ul>
+                                    <li><h3>상품</h3></li>
+                                    <li><h4>- 스틱커피</h4></li>
+                                    <li><h4>- 아이스 텀블러</h4></li>
+                                    <li><h4>- 보온 텀블러</h4></li>
+                                    <li><h4>- 머그</h4></li>
+                                    <li><h4>- 파우더</h4></li>
+                                    <li><h4>- 푸드</h4></li>
+                                    <li><h4>- 기타상품</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu1-2">
+                                <ul>
+                                    <li><h3>CBTL시스템</h3></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><h3>MEMBER`S CLUB</h3>
+                        <div class="submenu2">
+                            <div class="submenu2-1">
+                                <ul>
+                                    <li><h3>커피빈 멤버스 클럽</h3></li>
+                                    <li><h4>- 멤버스 클럽</h4></li>
+                                    <li><h4>- 커피빈 카드</h4></li>
+                                    <li><h4>- 커피빈 e-Gift</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu2-2">
+                                <ul>
+                                    <li><h3>나의 커피빈</h3></li>
+                                    <li><h4>- 나의 콩/e쿠폰보기</h4></li>
+                                    <li><h4>- 나의 커피빈 카드</h4></li>
+                                    <li><h4>- 커피빈 카드 등록</h4></li>
+                                    <li><h4>- 분실신고/환불신청</h4></li>
+                                    <li><h4>- e-Gift 구매</h4></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><h3>MENU</h3>
+                        <div class="submenu3">
+                            <div class="submenu3-1">
+                                <ul>
+                                    <li><h3>음료</h3></li>
+                                    <li><h4>- 신음료</h4></li>
+                                    <li><h4>- 에스프레소 음료</h4></li>
+                                    <li><h4>- 브루드 커피</h4></li>
+                                    <li><h4>- 티</h4></li>
+                                    <li><h4>- 티 라떼</h4></li>
+                                    <li><h4>- 아이스 블렌디드 ( Coffee)</h4></li>
+                                    <li><h4>- 아이스 블렌디드 (Non-Coffee)</h4></li>
+                                    <li><h4>- 커피빈 주수(병음료</h4></li>
+                                    <li><h4>- 기타 제조 음료</h4></li>
+                                    <li><h4>- 엑스트라</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu3-2">
+                                <ul>
+                                    <li><h3>푸드</h3></li>
+                                    <li><h4>- 베이커리</h4></li>
+                                    <li><h4>- 케익</h4></li>
+                                    <li><h4>- 홀케익</h4></li>
+                                    <li><h4>- 샌드위치 & 샐러드</h4></li>
+                                    <li><h4>- 기타</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu3-3">
+                                <ul>
+                                    <li><h3>상품</h3></li>
+                                    <li><h4>- 아이스 텀블러</h4></li>
+                                    <li><h4>- 보온 텀블러</h4></li>
+                                    <li><h4>- 머그</h4></li>
+                                    <li><h4>- 소풍커피</h4></li>
+                                    <li><h4>- 스틱커피</h4></li>
+                                    <li><h4>- 파우더</h4></li>
+                                    <li><h4>- 기타상품</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu3-4">
+                                <ul>
+                                    <li><h3>카드</h3></li>
+                                    <li><h4>- e-Gift 카드</h4></li>
+                                    <li><h4>- 실물 카드</h4></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><h3>STORE & 서비스</h3>
+                        <div class="submenu4">
+                            <div class="submenu4-1">
+                                <ul>
+                                    <li><h4>케이터링 서비스</h4></li>
+                                    <li><h4>매장 찾기</h4></li>
+                                    <li><h4>신규 매장</h4></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><h3>THE COFFEE BEAN</h3>
+                        <div class="submenu5">
+                            <div class="submenu5-1">
+                                <ul>
+                                    <li><h3>커피빈 코리아</h3></li>
+                                    <li><h4>- Simply the Best</h4></li>
+                                    <li><h4>- 커피빈 커피와 티</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu5-2">
+                                <ul>
+                                    <li><h3>커피빈 소식</h3></li>
+                                    <li><h4>- 새소식</h4></li>
+                                    <li><h4>- 프로모션</h4></li>
+                                    <li><h4>- 공지사항</h4></li>
+                                    <li><h4>- 소셜미디어</h4></li>
+                                </ul>
+
+                            </div>
+                            <div class="submenu5-3">
+                                <ul>
+                                    <li><h3>사회공헌</h3></li>
+                                    <li><h4>- 국제 사회공헌</h4></li>
+                                    <li><h4>- 필리핀 청소년 교육혜택 지원하기</h4></li>
+                                    <li><h4>- 성경원, 나눔의 샘 후원 결연</h4></li>
+                                </ul>
+
+                            </div>
+                            <div class="submenu5-4">
+                                <ul>
+                                    <li><h3>채용안내</h3></li>
+                                    <li><h4>- 채용안내 바로가기</h4></li>
+                                    <li><h4>- 채용카테고리</h4></li>
+                                </ul>
+                            </div>
+                            <div class="submenu5-5">
+                                <ul>
+                                    <li><h4>신규 입점 제의</h4></li>
+                                    <li><h4>결산공고</h4></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><h3>CBTL</h3>
+                        <div class="submenu6">
+                            <ul>
+                                <li><h4>CBTL 가이드</h4></li>
+                                <li><h4>CBTL 서비스</h4></li>
+                                <li><h4>AS 안내</h4></li>
+                                <li><h4>AS 신청</h4></li>
+                                <li><h4>CBTL FAQ</h4></li>
+                                <li><h4>제품설명서</h4></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div id="search">
+                    <img src="icons/ico_search.png" alt="">
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+    </header>
+    <!--main 슬라이드 시작----------------------------------------------------------------------------->
+    <section id="section1">
+        <div id="section1_box1"></div>
+        <div id="section1_box2"></div>
+    </section>
+    <!--상품영역 시작 md_pick---------------------------------------------------------------------------------->
+    <div id="md_pick">
+        <h2>MD'S PICK</h2>
+
+        <div id="md_pick_box_wrap">
+            <div id="md_pick_box">
+                <ul id="md_pick1">
+                    <li>
+                        <img src="images/12400062.jpg" alt="">
+                        <h3>커피빈 x 나인웨어 피크닉세트(2인)</h3>
+                        <h4>(인당 2개 구매제한)</h4>
+                        <h5>35,000원</h5>
+                        <div class="quickview">
+                            <button>QUICKVIEW</button>
+                        </div>
+                    </li>
+                    <li><img src="images/12100058.jpg" alt="">
+                        <h3>웨이브글라스머그(오로라) 450ml</h3>
+                     
+                        <h5>15,000원</h5>
+                        <div class="quickview">
+                            <button>QUICKVIEW</button>
+                        </div>
+                    </li>
+                    <li><img src="images/12200050.jpg" alt="">
+                        <h3>그립스텐텀블러(소프트퍼플) 540ML</h3>
+                     
+                        <h5>23,000원</h5>
+                        <div class="quickview">
+                            <button>QUICKVIEW</button>
+                        </div>
+                    </li>
+                    
+                    <li><img src="images/12200051.jpg" alt="">
+                        <h3>앵글스텐텀블러 500ml</h3>
+                     
+                        <h5>16,000원</h5>
+                        <div class="quickview">
+                            <button>QUICKVIEW</button>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <img src="images/12100055.jpg" alt="">
+                        <h3>그립 더블월 빅 글라스(오로라)550ml</h3>
+                        
+                        <h5>14,000원</h5>
+                        <div class="quickview">
+                            <button>QUICKVIEW</button>
+                        </div>
+                    </li>
+                    <li><img src="images/12100054.jpg" alt="">
+                        <h3>워터드롭 더블 월 글라스(오로라) 470ml</h3>
+                       
+                        <h5>11,000원</h5>
+                        <div class="quickview">
+                            <button>QUICKVIEW</button>
+                        </div>
+                    </li>
+                    <li><img src="images/11600024.jpg" alt="">
+                        <h3>(펫전용)펫리드줄(소프트퍼플)</h3>
+                        <h4>커피빈 바닐라 라떼 (21.6g*2T)</h4>
+                        <h5>10,000원</h5>
+                        <div class="quickview">
+                            <button>QUICKVIEW</button>
+                        </div>
+                    </li>
+                    <li><img src="images/11600025.jpg" alt="">
+                        <h3>(펫전용)H형하네스&원형파우치세트</h3>
+                       
+                        <h5>22,000원</h5>
+                        <div class="quickview">
+                            <button>QUICKVIEW</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!--md_pick_bt------------------------------------------------------------>
+
+    <div id="md_pick_bt_box">
+        <div class="pause_box">
+            <img src="icons/btn_pause.png" alt="" class="pause">
+        </div>
+
+        <ul id="md_pick_bt1">
+            <li><img src="icons/paging_on_popup.png" alt="" class="off"><img src="icons/paging_on.png" alt="" class="on"></li>
+            <li><img src="icons/paging_on_popup.png" alt="" class="off"><img src="icons/paging_on.png" alt="" class="on"></li>
+        </ul>
+    </div>
+
+
+    <!--What's new영역 시작------------------------------------------------->
+    <div id="Whats_new">
+        <h2>What's new</h2>
+        <div id="whats_new_wrap">
+            <ul>
+                <li>
+                    <img src="images/Whats_new1.jpg" alt="">
+                    <h3>2022 06 Bacon Scallion Cream Cheese Bagel</h3>
+                </li>
+                <li><img src="images/Whats_new2.jpg" alt="">
+                    <h3>2022 06 What a Sweet Color Purple</h3>
+
+                </li>
+                <li><img src="images/Whats_new3.jpg" alt="">
+                    <h3>2022 What a Sweet Colot Purple</h3>
+
+                </li>
+                <li>
+                    <img src="images/Whats_new4.jpg" alt="">
+                    <h3>2022 06 Do It(eat) Yourself</h3>
+                </li>
+                <li><img src="images/Whats_new5.jpg" alt="">
+                    <h3>2022 06 My Pleasure In Ordinary Days</h3>
+
+                </li>
+                <li><img src="images/Whats_new6.jpg" alt="">
+                    <h3>2022 05 Fresh Milk Honey Cake & White Cheese Mousse Cake</h3>
+
+                </li>
+                <li>
+                    <img src="images/Whats_new7.jpg" alt="">
+                    <h3>2022 05 My Marvelous Dimon</h3>
+                </li>
+                <li><img src="images/Whats_new8.jpg" alt="">
+                    <h3>2022 05 Coffeebean Whole Cake
+
+                    </h3>
+
+                </li>
+                <li><img src="images/Whats_new9.jpg" alt="">
+                    <h3>2022 04 For your Balance in Coffeebean</h3>
+
+                </li>
+                <li>
+                    <img src="images/Whats_new10.jpg" alt="">
+                    <h3>2022 04 Coffeebean with Jeju</h3>
+                </li>
+                <li><img src="images/Whats_new11.jpg" alt="">
+                    <h3>2022 03 Be always Blooming_MD</h3>
+
+                </li>
+                <li><img src="images/Whats_new12.jpg" alt="">
+                    <h3>2022 03 Coffeebean Poop Bag</h3>
+
+                </li>
+                <li>
+                    <img src="images/Whats_new13.jpg" alt="">
+                    <h3>2022 03 Spring Hallabong Cake & Rasberry Cheese Cake</h3>
+                </li>
+                <li><img src="images/Whats_new14.jpg" alt="">
+                    <h3>2022 03 Be always Blooming</h3>
+
+                </li>
+                <li><img src="images/Whats_new15.jpg" alt="">
+                    <h3>2022 Happy New Edition</h3>
+
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <div id="Whats_new_bt_box">
+        <div class="pause_box">
+            <img src="icons/btn_pause.png" alt="" class="pause">
+        </div>
+
+        <ul id="Whats_new_bt1">
+            <li><img src="icons/paging_on_popup.png" alt="" class="off"><img src="icons/paging_on.png" alt="" class="on"></li>
+            <li><img src="icons/paging_on_popup.png" alt="" class="off"><img src="icons/paging_on.png" alt="" class="on"></li>
+            <li><img src="icons/paging_on_popup.png" alt="" class="off"><img src="icons/paging_on.png" alt="" class="on"></li>
+            <li><img src="icons/paging_on_popup.png" alt="" class="off"><img src="icons/paging_on.png" alt="" class="on"></li>
+            <li><img src="icons/paging_on_popup.png" alt="" class="off"><img src="icons/paging_on.png" alt="" class="on"></li>
+            
+        </ul>
+    </div>
+
+
+    
+
+    <section id="section4">
+        <div id="section4_box1">
+            <h4>#커피빈코리아 #커피빈맛있다 #커피빈사랑해</h4>
+            <ul>
+                <li><img src="images/main_section1.jpg" alt=""></li>
+                <li><img src="images/main_section2.jpg" alt=""></li>
+                <li><img src="images/main_section3.jpg" alt=""></li>
+                <li><img src="images/main_section4.jpg" alt=""></li>
+                <li><img src="images/main_section5.jpg" alt=""></li>
+                <li><img src="images/main_section6.jpg" alt=""></li>
+                <li><img src="images/main_section7.jpg" alt=""></li>
+                <li><img src="images/main_section8.jpg" alt=""></li>
+                <li><img src="images/main_section9.jpg" alt=""></li>
+                <li><img src="images/main_section10.jpg" alt=""></li>
+                <li><img src="images/main_section11.jpg" alt=""></li>
+                <li><img src="images/main_section12.jpg" alt=""></li>
+            </ul>
+            
+            
+            <br><button><b>OUR INSTAGRAM - @COFFEEBEAN_KR</b></button>
+
+        </div>
+    </section>
+    <footer>
+        <div id="footer1"> 
+            <ul>
+                <li><h2>Buy Online</h2></li>
+                <li>VIEW ALL</li>
+                <li>커피</li>
+                <li>티</li>
+                <li>CBTL 시스템</li>
+                <li>상품</li>
+            </ul>
+            <ul>
+                <li><h2>Member`s Club</h2></li>
+                <li>커피빈 멤버스 클럽</li>
+                <li>나의 커피빈</li>
+                
+            </ul>
+            <ul>
+                <li><h2>Menu</h2></li>
+                <li>음료</li>
+                <li>푸드</li>
+                <li>상품</li>
+                <li>카드</li>
+            
+            </ul>
+            <ul>
+                <li><h2>Store & 서비스</h2></li>
+                <li>케이터링 서비스</li>
+                <li>매장 찾기</li>
+                <li>신규매장</li>
+                
+            </ul>
+            <ul>
+                <li><h2>The Coffee Bean</h2></li>
+                <li>커비핀코리아</li>
+                <li>커피빈 소식</li>
+                <li>사회공헌</li>
+                <li>제휴 마케팅 제안</li>
+                <li>채용안내</li>
+                <li>신규 입점 제의</li>
+                <li>결산공고</li>
+            </ul>
+            <ul>
+                <li><h2>CBTL</h2></li>
+                <li>CBTL 가이드</li>
+                <li>CBTL 서비스</li>
+                <li>AS 안내</li>
+                <li>AS 신청</li>
+                <li>CBTL FAQ</li>
+            </ul>
+            
+            <div id =border>
+
+            </div>
+        </div>
+            <div id="footer2">
+                <ul>
+                    <li>홈페이지 이용약관</li>
+                    <li>개인정보처리방침</li>
+                    <li>영상정보처리기기운영방침</li>
+                    <li>멤버스카드이용약관</li>
+                    <li>위치기반서비스 이용약관</li>
+                </ul>
+            </div>
+    
+    
+        
+            <div id="footer4">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            
+            <div id="footer3">
+                <ul>
+                    <li>(주)커피빈코리아 대표이사 감종철 ㅣ 사업자등록번호 120-86-07029 ㅣ 통신판매업신고 제 2010-서울강남-00560</li>
+                    <li>서울시 강남구 봉은사로 99길 7 ㅣ 고객센터 02-1577-4708 (09:00 - 18:00) ㅣE-mail : cbk@coffeebeankorea.com</li>
+                    <li>ⓒ 2021. The Coffee Bean. All rights reserved.</li>
+                </ul>
+            </div>
+            
+    
+    </footer>
+    <div id="top">
+        <img id='top_img' src="icons/btn_top.png" alt="">
+    </div>
+</body>
+</html>

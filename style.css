@@ -1,0 +1,245 @@
+*{margin: 0;padding: 0;list-style: none; font-family: 'Open Sans', sans-serif;}
+        /* 헤더부분 상단바 고정은 위아래 값이 줘야 위에서 고정된다*/
+        #header_up_slide { width: 100%; height: 119px; background-color: #2f1c11; position: relative; display: none;}
+        #header_up_slide_text { width: 583px; height: 35px; position: absolute; left: 300px; bottom: 50px;}
+        #header_up_slide_text h3 { font-size: 18px; color: #fff; font-weight: 500; margin-top: 20px;}
+        #header_up_slide_text h3 span { color: #f2af24; }
+
+
+        #header_up_slide_bt { width: 362px; height: 36px; position: absolute; right: 337px; bottom: 40px;  }
+        #h_bt_1 { width: 170px; height: 36px; background-color: #fff; color: #2f1c11; border: none;margin-right: 20px; float: left; font-size: 16px; cursor: pointer;}
+        #h_bt_2 { width: 170px; height: 36px; background-color: rgba(255, 255, 255, 0); color: #fff; border: 1px solid #fff; float: left;font-size: 16px;cursor: pointer;}
+
+
+        header { position: fixed ; top: 0; z-index: 1000;  width: 100%; border-bottom: 1px solid #ccc; }
+        #header1 { width: 100%; height: 40px; background-color: #eee; }
+        #header2 { width: 100%; height: 100px; background-color: rgb(255, 255, 255); position: relative;}
+
+        #header1_box { width: 1210px; height: 40px;  margin: auto;}
+        #header2_box { width: 1210px; height: 100px;  margin: auto;  line-height: 100px; position: relative;}
+
+        /* 헤더 박스보면 ul에 먼저 fl:r를 준 다음 밑에 fl:l를 준다*/
+
+        #header1_box ul { float: right; position: relative;}
+        #header1_box ul li { float: left; line-height: 40px; font-size: 14px;margin-left: 15px; cursor: pointer;}
+        #header1_box ul li:nth-child(5) { margin-right: 100px; }
+        #header1_box ul li:nth-child(6) { width: 60px; height: 40px; background: #2f1c11; position: absolute; right: 0; top: 0; z-index: 300;}
+       
+        #header1_box ul li:nth-child(1){ border-right: 1px solid #ccc; padding-right: 10px;}
+        #header1_box ul>li>img { margin: 10px 20px; width: 20px; height: 20px;  }
+
+        #header2_box>#logo { width: 100px; height: 100px; background:url(logo_new.jpg) center no-repeat; float: left; cursor: pointer;}
+        #header2_box>#menu {  background-color: rgb(255, 255, 255); width: 1010px; float: left; text-align: center; line-height: 100px; margin: auto; } 
+        #header2_box>#menu>li { display: inline-block;  padding: 0 20px; font-size: 15px; font-weight: 700; position: relative;}
+        #header2_box>#menu>li:hover { color:#d4641a; }
+        #header2_box>#menu>li>h3 { cursor: pointer; line-height: 40px; font-size: 14px;margin-left: 15px;}
+        #search { width: 30px; height: 30px; margin-top: 30px; float: right; position: relative;}
+        #search>img { position: absolute; left: 0;top: 10px; }
+        #search_box { width: 1260px; height: 82px; background-color: #ddd; position: absolute; top: 100px; left: 0px; right: 0; margin: auto; display: none; }
+        #search_box>input { width: 1000px; height: 20px; position: absolute; left: 0;top: 0;bottom: 0;right: 0; margin: auto; text-align: center; background-color: rgba(255, 255, 255, 0); border: none; color: #000; font-size: 12px; font-weight: 800;}
+        
+       
+        
+        /*sub*/
+        #menu>li>div { display: none; }
+       
+        #menu>li>div>div>ul>li>h3 { cursor: pointer; font-size: 15px; color: #000; line-height: 50px;text-align: left; margin-top: 20px; margin-left: 20px;}
+        #menu>li>div>div>ul>li>h4 { cursor: pointer; font-size: 13px; color: #000; line-height: 25px; font-weight: 300; text-align: left; margin-left: 20px;}
+        
+        .submenu1 { width: 1262px; height: 363px; position: absolute; right: 0; left: -250px; top: 70px; background-color: rgb(242, 242, 242); }
+        .submenu1-1 { width: 250px; height: 100px; float: left;}
+        .submenu1-2 { width: 250px; height: 250px; float: left;}
+        .submenu1-2>ul>li>h4>span { color: #d4641a;  }
+        .submenu2 { width: 602px; height: 231px;  position: absolute; right: 0; left: -20px; top: 70px; background-color: rgb(242, 242, 242);  }
+        .submenu2-1 {width: 200px; height: 231px;float: left;}
+        .submenu2-2 {width: 400px; height: 231px;float: left;}
+        .submenu3 { width: 810px; height: 358px;  position: absolute; right: 0; left: -80px; top: 70px; background-color: rgb(242, 242, 242); }
+        .submenu3-1 { float: left; margin-left: 50px;}
+        .submenu3-2 { float: left;  margin-left: 30px;}
+        .submenu3-3 { float: left; margin-left: 30px; }
+        .submenu3-4 { float: left;  margin-left: 40px;}
+        .submenu4 { width: 200px; height: 156px; position: absolute; right: 0; left: -20px; top: 70px; background-color: rgb(242, 242, 242);  }
+        .submenu4-1 { margin-top: 40px; margin-left: 20px; }
+        #menu>li>div .submenu4-1>ul>li>h4 { font-size: 15px; margin-top: 5px; }
+        .submenu5 { width: 1062px; height: 204px; position: absolute; right: -300px; top: 70px; background-color: rgb(242, 242, 242);  }
+        .submenu5-1 { float: left;  margin-left: 20px;}
+        .submenu5-2 { float: left; margin-left: 50px;}
+        .submenu5-3 { float: left; margin-left: 50px;}
+        .submenu5-4 {  float: left;margin-left: 50px;}
+        .submenu5-5 { float: left; margin-left: 50px;}
+        #menu>li>div .submenu5-5>ul>li>h3 {  margin-top: 30px; }
+        #menu>li>div .submenu5-5>ul>li>h4 { font-size: 15px; font-weight: 900;  }
+        .submenu6 { width: 200px; height: 237px; position: absolute; right: -100px; top: 70px; background-color: rgb(242, 242, 242);    }
+        #menu>li .submenu6>ul>li>h3 { }
+        #menu>li .submenu6>ul>li>h4 { font-size: 14px; color: #000; text-align: left; line-height: 10px;margin-top: 20px; margin-left: 20px; font-weight: 200;  }
+        
+        
+
+        /*main 슬라이드-----------------------------------------------------------------------------------------------------------------*/
+
+        #section1 { margin-top: 140px;  }
+        #section1_box1 { width: 100%; height: 700px; background: url(images/mainslide_pc.jpg) no-repeat; }
+        #section1_box2 { width: 100%; height: 400px; background: url(images/mainslide_pc2.jpg); }
+
+        /*md_pick----------------------------------------------------------------------------------------------------------------------------*/
+
+
+        
+
+        #md_pick { width: 1000px; height: 580px;  margin: auto;  position: relative;}
+
+        #md_pick h2 { width: 1000px; height: 135px;  line-height: 135px; text-align: center; color: #d4641a;}
+        #md_pick_box_wrap { width: 1000px; height: 429px;   overflow: hidden; }
+        #md_pick_box { width: 2000px; height: 428px; position: relative;}
+        #md_pick ul {width: 2000px; height: 428px;  position: absolute; left: 0; top: 0; bottom: 0; right: 0; margin: auto;  }
+        
+        #md_pick ul li { width: 240px; height: 370px; float: left; margin: 5px; text-align: center; position: relative; cursor: pointer; }
+        #md_pick ul li img { width: 100%; height: 280px; }
+        #md_pick ul li h3 {  font-size: 16px; font-weight: 700; }
+        #md_pick ul li h4 { font-size: 12px; font-weight: 400;margin-top: 10px;}
+        #md_pick ul li h5 {  font-size: 12px; font-weight: 400;color: #d4641a;margin-top: 5px;}
+
+        #md_pick ul li:hover .quickview { background-color: rgba(255, 255, 255, 0.399);  }
+        #md_pick ul li:hover .quickview>button { display: block; }
+
+        .quickview { position: absolute; top: 0; left: 0; width: 100%; height: 280px; transition: 0.5s;}
+        .quickview>button { width: 200px; height: 41px; line-height: 41px; background-color: #f38200; color: #fff; font-size: 14px; font-weight: 800; border: none;position: absolute; bottom: 50px; left: 0; right: 0; margin: auto; display: none; letter-spacing: 1px;}
+        
+        
+        /*md_pick_bt 버튼------------------------------------------------------------------------------------------------------*/
+        #md_pick_bt_box{ width: 160px; height: 40px;  margin: auto; position: relative; }
+        .pause_box { width: 30px; height: 20px; float: left; margin-top: 10px; margin-left: 20px; border-right: 1px solid rgb(179, 179, 179);}
+        .pause { width: 11px; height: 13px; cursor: pointer;}
+
+        #md_pick_bt1 { height: 40px; float: right; margin-top: 15px; margin-left: -25px; }
+        #md_pick_bt1>li { width: 20px; height: 20px; float: left;position: relative; margin:0 5px; cursor: pointer; }
+        #md_pick_bt1>li>img { position: absolute;}
+        #md_pick_bt1>li:last-child .on { display: none; }
+
+
+
+       
+        
+        
+        /*Whats_new----------------------------------------------------------------------------------------------------------*/
+
+        #Whats_new {width: 1236px; height: 760px; margin: auto; padding-top: 50px; }
+        #Whats_new h2 { height: 100px; line-height: 100px;  color: #d4641a; text-align: center; margin-bottom: 70px; }
+        #whats_new_wrap { width: 1236px; height: 494px;   position: relative; overflow: hidden;}
+        #Whats_new ul { width: 6180px; height: 494px; position: absolute; left: 0; top: 0; bottom: 0; }
+        #Whats_new ul li { width: 380px; height: 580px;  float: left; margin:0 15px; text-align: center; cursor: pointer; }
+        #Whats_new ul li h3 { font-size: 15px; font-weight: 700;margin-top: 30px; color:#d4641a; }
+        #Whats_new ul li img { width: 100%; height: 400px; transition: 0.5s; }
+        #Whats_new ul li:hover  img{ opacity: 0.8; }
+
+        /*Whats_new_bt---------------------------------------------------------------------------------------------*/
+
+        #Whats_new_bt_box{ width: 260px; height: 40px;  margin: auto; position: relative;  margin-bottom: 50px;}
+        .pause_box { width: 50px; height: 20px; float: left; margin-left: 20px; border-right: 1px solid rgb(179, 179, 179);}
+        .pause { width: 11px; height: 13px; cursor: pointer;}
+
+        #Whats_new_bt1{ height: 40px; float: right; margin-top: 15px; }
+        #Whats_new_bt1>li { width: 20px; height: 20px; float: left;position: relative; margin:0 5px; cursor: pointer; }
+        #Whats_new_bt1>li>img { position: absolute;}
+        #Whats_new_bt1>li .on { display: none; }
+        #Whats_new_bt1>li:first-child .on { display: block; }
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        /*보라색 인스타창-------------------------------------------------------------------------------------------------------------------*/
+
+        #section4 { width: 100%; height: 620px; background-color: #7c51a1; text-align: center; }
+        
+        
+        #section4_box1>h4 {text-align: center; line-height: 80px; padding-top: 15px; color: #fff; font-size: 25px;font-weight: 500;}
+        #section4_box1>ul { width: 1200px;height: 400px; margin: auto; }
+        #section4_box1>ul>li { width: 200px; height: 200px; float: left;  overflow: hidden; cursor: pointer; }
+        #section4_box1>ul>li>img {width: 100%; height: 200px;  transition:transform 0.5s;}
+        /*transition에 transform만 적용하고 싶으면 앞에 트랜스폼 써주면 ok*/
+        #section4_box1>ul>li>img:hover { transform: scale(1.1);  opacity: 0.7;}
+        /* 뒤에 배경색이 비쳐보이게 op를 넣는다 ul에 색상이 없어야 맨 뒤 보라색이 보인다*/
+        
+
+
+        #section4_box1>button { width: 400px; height: 40px; margin-top: 30px; background-color: #f38200; border: none; color: #fff; cursor: pointer; letter-spacing: 2px;}
+        /*버튼은 인라인 요소이기 때문에 부모요소에 ta:c를 해준다*/
+
+       /*트랜지션은 hover가 아니라 a1에 넣어준다*/
+        
+        
+        
+
+       
+        
+        
+       
+        
+        
+
+
+
+        /*맨아래 메뉴*/
+
+        footer { background-color: rgb(221, 221, 221); width: 100%; height: 475px; overflow: hidden; }
+        #footer1 { width: 1210px;height: 280px; margin: auto; margin-top: 50px; }
+        #footer1>ul {   margin: auto;   vertical-align: top;  display: inline-block; padding: 20px 0px; padding-right: 85px; color: #5f4d3f;}
+        #footer1>ul>li>h2 { color: rgb(227, 156, 130); font-size: 20px; padding-bottom: 10px; cursor: pointer;}
+        #footer1>ul>li { padding: 5px; font-size: 13px; cursor: pointer;}
+        /* 맨 마지막 메뉴는 display: inline-block; 을 주면 중앙에 배열되기 때문에 vertical-align: top;을 줘서 맨 위부터 아래로 떨어지게 한다*/
+        
+        #border { width: 1210px; height: 10px;border-top: 1px solid #5f4d3f; }
+        /*이용약관--------------------------------------------*/
+
+
+        #footer2 { width: 1210px;height: 50px; margin: auto; border-top: 1px solid #5f4d3f;}   
+        #footer2>ul { float: left; color: #5f4d3f; }    
+        #footer2>ul>li { display: inline-block; border-right: 1px solid #5f4d3f; padding-right: 5px;  font-size: 13px; margin-top: 20px; cursor: pointer;}
+        #footer2>ul>li:nth-child(2) { color: #d4641a;}
+        #footer2>ul>li:nth-child(5) { border: none; } 
+
+        
+
+        /*주소-------------------------------------------------*/
+
+        #footer3 {width: 1210px;height: 100px; margin: auto;  }
+        #footer3>ul { float: left; font-size: 13px;margin-top: 20px; color: #5f4d3f;}
+        #footer3>ul>li { cursor: pointer; }
+
+        /*sns 주소 아이콘---------------------------------------*/
+
+        #footer4 { width: 600px;height: 50px; margin: auto; float: right;}
+        #footer4>ul{    margin-left: 20px;}
+        #footer4>ul>li {  float: left; cursor: pointer;}
+        #footer4>ul>li:nth-child(1) { width: 50px; height: 50px; background: url(icons/ico_facebook.png) center no-repeat; } 
+        #footer4>ul>li:nth-child(2) { width: 50px; height: 50px; background: url(icons/ico_instagram.png) center no-repeat; } 
+        #footer4>ul>li:nth-child(3) { width: 50px; height: 50px; background: url(icons/ico_blog.png) center no-repeat; } 
+        #footer4>ul>li:nth-child(4) { width: 50px; height: 50px; background: url(icons/ico_twitter.png) center no-repeat; } 
+        
+        #top { position: fixed; right: 50px; bottom: 100px; cursor: pointer;}
+
+        
+
+
+            
+
+
+        
+
+
+       
